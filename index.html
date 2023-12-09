@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 style="background-color: green;" class="d-flex justify-content-center"> HTTP - XMLHttpRequest</h1>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 ">
+                <div class="card mb-4 cardBody">
+                    <div class="card-body">
+                        <form id="postForm">
+                            <div class="form-group">
+                                <label for="title">title</label>
+                                <input type="text" id="title" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="body">body</label>
+                                <textarea type="text" id="body" rows="4" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="userId">userId</label>
+                                <select class="form-control" id="userId">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-outline-primary" type="submit" id="addBtn">add post</button>
+                                <button class="btn btn-outline-success d-none" type="button" id="UpdateBtn">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+               <div id="cardContainer" class="d-flex flex-column-reverse">
+               
+               </div>
+
+
+               
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
